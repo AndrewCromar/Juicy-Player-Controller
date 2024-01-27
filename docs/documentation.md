@@ -255,3 +255,242 @@ jucy_pc.SetJumpHeight(100f);
   public float GetGroundDistance(){ return ground_distance; }
   ```
 </details>
+
+## Setting variable values.
+<details>
+  <summary>SetMouseSensitivity()</summary>
+  
+  ### Description
+  Returns the mouse_sensitivity variable as a float.
+
+  ### Usage
+  ```cs
+  jucy_pc.SetMouseSensitivity({new_value});
+  ```
+
+  ### Source Code
+  ```cs
+  public void SetMouseSensitivity(float new_sensitivity){ mouse_sensitivity = new_sensitivity; }
+  ```
+</details>
+
+<details>
+  <summary>SetJumpHeight()</summary>
+  
+  ### Description
+  Returns the jump_height variable as a float.
+
+  ### Usage
+  ```cs
+  jucy_pc.SetJumpHeight({new_value});
+  ```
+
+  ### Source Code
+  ```cs
+  public void SetJumpHeight(float new_jump_height){ jump_height = new_jump_height; }
+  ```
+</details>
+
+<details>
+  <summary>SetGravity()</summary>
+  
+  ### Description
+  Returns the gravity variable as a float.
+
+  ### Usage
+  ```cs
+  jucy_pc.SetGravity({new_value});
+  ```
+
+  ### Source Code
+  ```cs
+  public void SetGravity(float new_gravity){ gravity = new_gravity; }
+  ```
+</details>
+
+<details>
+  <summary>SetWalkSpeed()</summary>
+  
+  ### Description
+  Returns the walk_speed variable as a float.
+
+  ### Usage
+  ```cs
+  jucy_pc.SetWalkSpeed({new_value});
+  ```
+
+  ### Source Code
+  ```cs
+  public void SetWalkSpeed(float new_walk_speed){ walk_speed = new_walk_speed; }
+  ```
+</details>
+
+<details>
+  <summary>SetRunKeybind()</summary>
+  
+  ### Description
+  Returns the run_keybind variable as a KeyCode.
+
+  ### Usage
+  ```cs
+  jucy_pc.SetRunKeybind({new_value});
+  ```
+
+  ### Source Code
+  ```cs
+  public void SetRunKeybind(KeyCode new_run_keybind){ run_keybind = new_run_keybind; }
+  ```
+</details>
+
+<details>
+  <summary>SetRunSpeed()</summary>
+  
+  ### Description
+  Returns the run_speed variable as a float.
+
+  ### Usage
+  ```cs
+  jucy_pc.SetRunSpeed({new_value});
+  ```
+
+  ### Source Code
+  ```cs
+  public void SetRunSpeed(float new_run_speed){ run_speed = new_run_speed; }
+  ```
+</details>
+
+<details>
+  <summary>SetStaminaDrain()</summary>
+  
+  ### Description
+  Returns the stamina_drain variable as a float.
+
+  ### Usage
+  ```cs
+  jucy_pc.SetStaminaDrain({new_value});
+  ```
+
+  ### Source Code
+  ```cs
+  public void SetStaminaDrain(float new_stamina_drain){ stamina_drain = new_stamina_drain; }
+  ```
+</details>
+
+<details>
+  <summary>SetStaminaRegen()</summary>
+  
+  ### Description
+  Returns the stamina_regen variable as a float.
+
+  ### Usage
+  ```cs
+  jucy_pc.SetStaminaRegen({new_value});
+  ```
+
+  ### Source Code
+  ```cs
+  public void SetStaminaRegen(float new_stamina_regen){ stamina_regen = new_stamina_regen; }
+  ```
+</details>
+
+<details>
+  <summary>SetMaxStamina()</summary>
+  
+  ### Description
+  Returns the max_stamina variable as a float.
+
+  ### Usage
+  ```cs
+  jucy_pc.SetMaxStamina({new_value});
+  ```
+
+  ### Source Code
+  ```cs
+  public void SetMaxStamina(float new_max_stamina){ max_stamina = new_max_stamina; }
+  ```
+</details>
+
+<details>
+  <summary>SetCrouchKeyBind()</summary>
+  
+  ### Description
+  Returns the crouch_keybind variable as a KeyCode.
+
+  ### Usage
+  ```cs
+  jucy_pc.SetCrouchKeyBind({new_value});
+  ```
+
+  ### Source Code
+  ```cs
+  public void SetCrouchKeyBind(KeyCode new_crouch_keybind){ crouch_keybind = new_crouch_keybind; }
+  ```
+</details>
+
+<details>
+  <summary>SetCrouchSpeed()</summary>
+  
+  ### Description
+  Returns the crouch_speed variable as a float.
+
+  ### Usage
+  ```cs
+  jucy_pc.SetCrouchSpeed({new_value});
+  ```
+
+  ### Source Code
+  ```cs
+  public void SetCrouchSpeed(float new_crouch_speed){ crouch_speed = new_crouch_speed; }
+  ```
+</details>
+
+<details>
+  <summary>SetDefaultHeight()</summary>
+  
+  ### Description
+  Returns the default_height variable as a float.
+
+  ### Usage
+  ```cs
+  jucy_pc.SetDefaultHeight({new_value});
+  ```
+
+  ### Source Code
+  ```cs
+  public void SetDefaultHeight(float new_default_height){ default_height = new_default_height; }
+  ```
+</details>
+
+<details>
+  <summary>SetCrouchHeight()</summary>
+  
+  ### Description
+  Returns the crouch_height variable as a float.
+
+  ### Usage
+  ```cs
+  jucy_pc.SetCrouchHeight({new_value});
+  ```
+
+  ### Source Code
+  ```cs
+  public void SetCrouchHeight(float new_crouch_height){ crouch_height = new_crouch_height; }
+  ```
+</details>
+
+<details>
+  <summary>SetGroundDistance()</summary>
+  
+  ### Description
+  Returns the ground_distance variable as a float.
+
+  ### Usage
+  ```cs
+  jucy_pc.SetGroundDistance({new_value});
+  ```
+
+  ### Source Code
+  ```cs
+  public void SetGroundDistance(float new_ground_distance){ ground_distance = new_ground_distance; }
+  ```
+</details>
