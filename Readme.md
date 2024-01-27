@@ -1,9 +1,12 @@
 # ONYX Juicy Player Controller
+A single c# script can have it all? Yes, Juicy PC is a single c# script for Unity 3d projects to act as a base player controller for any first person Unity 3d projects.
 
 ## Features
 - [x] Walking.
 - [x] Running.
 - [x] Crouching.
+- [x] Looking around.
+- [x] Cursor hiding.
 - [x] Fully custom controller tuning.
 - [x] Built in default recommended settings.
 - [x] Helpful error logging.
@@ -21,5 +24,18 @@
 7. Assign the "Ground" layer to any gameobjects that will be walkable.
 8. Press the "Play" button and see as your fully custom Juicy Player is controllable.
 
+## Current Roadmap
+- [x] Simple first release.
+- [x] Epic logo.
+- [ ] Script "API".
+- [ ] Docs.
+- [ ] Trailer.
+- [ ] Unity Asset Store
+
+##
+### Youtube
+[youtube.com/@ONYXDevelopment](https://www.youtube.com/@ONYXDevelopment)
+### Discord
+[discord.gg](https://discord.gg/2maTr7RQQQ)
 ##
 <img src="ONYX/onyx_logo.png" alt="onyx_logo" width="200"/> <img src="ONYX/juicy_pc_logo.png" alt="juicy_pc_logo" width="200"/>
