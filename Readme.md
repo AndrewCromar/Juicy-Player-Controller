@@ -1,7 +1,5 @@
 # ONYX Juicy Player Controller
 
-<img src="ONYX/onyx_logo.png" alt="onyx_logo" width="200"/> <img src="ONYX/juicy_pc_logo.png" alt="juicy_pc_logo" width="200"/>
-
 ## Features
 - [x] Walking.
 - [x] Running.
@@ -21,3 +19,6 @@
      > This can be customized later.
 7. Assign the "Ground" layer to any gameobjects that will be walkable.
 8. Press the "Play" button and see as your fully custom Juicy Player is controllable.
+
+##
+<img src="ONYX/onyx_logo.png" alt="onyx_logo" width="200"/> <img src="ONYX/juicy_pc_logo.png" alt="juicy_pc_logo" width="200"/>
