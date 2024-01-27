@@ -5,6 +5,7 @@
 - [x] Running.
 - [x] Crouching.
 - [x] Fully custom controller tuning.
+- [x] Built in default recommended settings.
 - [x] Helpful error logging.
 - [x] Debug variable in the inspector.
 
