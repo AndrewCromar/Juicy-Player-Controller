@@ -9,7 +9,7 @@ Note:
 ## How to reference the script.
 From anywhere in the scene you can reference the Juicy_Player_Controller  script using the following code:
 ```cs
-public Juicy_Player_Controller jucy_pc = Juicy_Player_Controller.instance;
+private Juicy_Player_Controller jucy_pc = Juicy_Player_Controller.instance;
 ```
 > This creates a variable called jucy_pc and sets it to the current active instance of the Juicy_Player_Controller script.
 
