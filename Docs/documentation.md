@@ -1,4 +1,4 @@
-# Jucy Documentation
+# Juicy Documentation
 Note:
 > Documentation for the Jucy Player Controller is ment to be as clear and simple to understand as possible. If anything does not make sense please let us know (via discord or github). You could also just make changes to the documentation in a pull request.
 
