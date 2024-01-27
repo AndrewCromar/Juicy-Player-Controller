@@ -10,9 +10,11 @@
 - [x] Debug variable in the inspector.
 
 ## How To Use
-1. Download the attached "zip" file.
-2. Extract it to you unity project's "Assets" folder.
-3. Drag and drop the "Juicy Player" prefab from "Assets/Juicy Player Controller/Prefab/Juicy Player.prefab" into your scene.
+1. Go to the latest release.
+     > These directions will be on the release also.
+3. Download the attached "zip" file.
+4. Extract it to you unity project's "Assets" folder.
+5. Drag and drop the "Juicy Player" prefab from "Assets/Juicy Player Controller/Prefab/Juicy Player.prefab" into your scene.
 6. Create layer "Ground".
      > This can be customized later.
 7. Assign the "Ground" layer to any gameobjects that will be walkable.
