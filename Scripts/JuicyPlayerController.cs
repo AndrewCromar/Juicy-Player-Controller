@@ -1,6 +1,8 @@
 using UnityEngine;
 
 public class JuicyPlayerController : MonoBehaviour {
+    [HideInInspector] public static JuicyPlayerController instance;
+
     [Header ("Mouse Lock")]
     [SerializeField] private bool auto_lock_cursor = true;
 
@@ -170,4 +172,42 @@ public class JuicyPlayerController : MonoBehaviour {
         camera_container.localRotation = Quaternion.Euler(cam_x_rotation, 0f, 0f);
         transform.Rotate(Vector3.up * mouse_x);
     }
+
+    #region api
+
+    #region set
+    public void SetMouseSensitivity(float new_sensitivity){ mouse_sensitivity = new_sensitivity; }
+    public void SetJumpHeight(float new_jump_height){ jump_height = new_jump_height; }
+    public void SetGravity(float new_gravity){ gravity = new_gravity; }
+    public void SetWalkSpeed(float new_walk_speed){ walk_speed = new_walk_speed; }
+    public void SetRunKeybind(KeyCode new_run_keybind){ run_keybind = new_run_keybind; }
+    public void SetRunSpeed(float new_run_speed){ run_speed = new_run_speed; }
+    public void SetStaminaDrain(float new_stamina_drain){ stamina_drain = new_stamina_drain; }
+    public void SetStaminaRegen(float new_stamina_regen){ stamina_regen = new_stamina_regen; }
+    public void SetMaxStamina(float new_max_stamina){ max_stamina = new_max_stamina; }
+    public void SetCrouchKeyBind(KeyCode new_crouch_keybind){ crouch_keybind = new_crouch_keybind; }
+    public void SetCrouchSpeed(float new_crouch_speed){ crouch_speed = new_crouch_speed; }
+    public void SetDefaultHeight(float new_default_height){ default_height = new_default_height; }
+    public void SetCrouchHeight(float new_crouch_height){ crouch_height = new_crouch_height; }
+    public void SetGroundDistance(float new_ground_distance){ ground_distance = new_ground_distance; }
+    #endregion
+
+    #region get
+    public void GetMouseSensitivity(){ return mouse_sensitivity; }
+    public void GetJumpHeight(){ return jump_height; }
+    public void GetGravity(){ return gravity; }
+    public void GetWalkSpeed(){ return walk_speed; }
+    public void GetRunKeybind(){ return run_keybind; }
+    public void GetRunSpeed(){ return run_speed; }
+    public void GetStaminaDrain(){ return stamina_drain; }
+    public void GetStaminaRegen(){ return stamina_regen; }
+    public void GetMaxStamina(){ return max_stamina; }
+    public void GetCrouchKeyBind(){ return crouch_keybind; }
+    public void GetCrouchSpeed(){ return crouch_speed; }
+    public void GetDefaultHeight(){ return default_height; }
+    public void GetCrouchHeight(){ return crouch_height; }
+    public void GetGroundDistance(){ return ground_distance; }
+    #endregion
+
+    #endregion
 }
