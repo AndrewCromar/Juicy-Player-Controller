@@ -7,7 +7,7 @@ Note:
 > This documentation will be updated to match the latest release.
 
 ## How to reference the script.
-From anywhere in the scene you can reference the Jucy PC script using the following code:
+From anywhere in the scene you can reference the Juicy_Player_Controller  script using the following code:
 ```cs
 public Juicy_Player_Controller jucy_pc = Juicy_Player_Controller.instance;
 ```
