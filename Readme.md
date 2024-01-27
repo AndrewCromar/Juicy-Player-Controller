@@ -8,6 +8,7 @@
 - [x] Built in default recommended settings.
 - [x] Helpful error logging.
 - [x] Debug variable in the inspector.
+- [x] Epic logo. 
 
 ## How To Use
 1. Go to the latest release.
