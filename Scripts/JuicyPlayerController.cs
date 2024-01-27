@@ -1,25 +1,28 @@
 using UnityEngine;
 
 public class JuicyPlayerController : MonoBehaviour {
-    [Header ("Camera Look Settings")]
+    [Header ("Mouse Lock")]
+    [SerializeField] private bool auto_lock_cursor = true;
+
+    [Header ("Camera Look")]
     [SerializeField] private string camera_container_tag = "camera_container";
     [SerializeField] private float mouse_sensitivity = 250f;
 
-    [Header ("Jump Settings")]
+    [Header ("Jump")]
     [SerializeField] private float jump_height = 1.5f;
     [SerializeField] private float gravity = -9.81f;
 
-    [Header ("Walk Settings")]
+    [Header ("Walk")]
     [SerializeField] private float walk_speed = 4f;
 
-    [Header ("Run Settings")]
+    [Header ("Run")]
     [SerializeField] private KeyCode run_keybind = KeyCode.LeftShift;
     [SerializeField] private float run_speed = 6f;
     [SerializeField] private float stamina_drain = -10f;
     [SerializeField] private float stamina_regen = 5f;
     [SerializeField] private float max_stamina = 100f;
 
-    [Header ("Crouch Settings")]
+    [Header ("Crouch")]
     [SerializeField] private KeyCode crouch_keybind = KeyCode.LeftControl;
     [SerializeField] private float crouch_speed = 2f;
     [SerializeField] private float default_height = 1f;
@@ -62,7 +65,7 @@ public class JuicyPlayerController : MonoBehaviour {
     }
 
     private void Start(){
-        Cursor.lockState = CursorLockMode.Locked;
+        if(auto_lock_cursor){ Cursor.lockState = CursorLockMode.Locked; }
     }
 
     private void Update(){
