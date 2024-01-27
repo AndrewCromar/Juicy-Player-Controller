@@ -4,6 +4,8 @@ Note:
 
 > Please report or fix any errors you might come across (via discord or github).
 
+> This documentation will be updated to match the latest release.
+
 ## How to reference the script.
 From anywhere in the scene you can reference the Jucy PC script using the following code:
 ```cs
