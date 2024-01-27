@@ -56,6 +56,8 @@ public class JuicyPlayerController : MonoBehaviour {
     }
 
     private void Awake(){
+        instance = this;
+        
         stamina = max_stamina;
 
         camera_container = GameObject.FindGameObjectsWithTag(camera_container_tag)[0].transform;
@@ -193,20 +195,20 @@ public class JuicyPlayerController : MonoBehaviour {
     #endregion
 
     #region get
-    public void GetMouseSensitivity(){ return mouse_sensitivity; }
-    public void GetJumpHeight(){ return jump_height; }
-    public void GetGravity(){ return gravity; }
-    public void GetWalkSpeed(){ return walk_speed; }
-    public void GetRunKeybind(){ return run_keybind; }
-    public void GetRunSpeed(){ return run_speed; }
-    public void GetStaminaDrain(){ return stamina_drain; }
-    public void GetStaminaRegen(){ return stamina_regen; }
-    public void GetMaxStamina(){ return max_stamina; }
-    public void GetCrouchKeyBind(){ return crouch_keybind; }
-    public void GetCrouchSpeed(){ return crouch_speed; }
-    public void GetDefaultHeight(){ return default_height; }
-    public void GetCrouchHeight(){ return crouch_height; }
-    public void GetGroundDistance(){ return ground_distance; }
+    public float GetMouseSensitivity(){ return mouse_sensitivity; }
+    public float GetJumpHeight(){ return jump_height; }
+    public float GetGravity(){ return gravity; }
+    public float GetWalkSpeed(){ return walk_speed; }
+    public KeyCode GetRunKeybind(){ return run_keybind; }
+    public float GetRunSpeed(){ return run_speed; }
+    public float GetStaminaDrain(){ return stamina_drain; }
+    public float GetStaminaRegen(){ return stamina_regen; }
+    public float GetMaxStamina(){ return max_stamina; }
+    public KeyCode GetCrouchKeyBind(){ return crouch_keybind; }
+    public float GetCrouchSpeed(){ return crouch_speed; }
+    public float GetDefaultHeight(){ return default_height; }
+    public float GetCrouchHeight(){ return crouch_height; }
+    public float GetGroundDistance(){ return ground_distance; }
     #endregion
 
     #endregion
