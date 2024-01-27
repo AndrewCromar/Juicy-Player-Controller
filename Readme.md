@@ -1,5 +1,7 @@
 # ONYX Juicy Player Controller
 
+<img src="ONYX/onyx_logo.png" alt="onyx_logo" width="200"/> <img src="ONYX/juicy_pc_logo.png" alt="juicy_pc_logo" width="200"/>
+
 ## Features
 - [x] Walking.
 - [x] Running.
