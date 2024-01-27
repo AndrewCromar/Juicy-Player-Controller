@@ -19,7 +19,14 @@ jucy_pc.SetJumpHeight(100f);
 <details>
   <summary>GetMouseSensitivity()</summary>
   
+  ### Description
   Returns the mouse_sensitivity variable as a float.
+
+  ### Usage
+  ```cs
+  jucy_pc.GetMouseSensitivity();
+  ```
+
   ### Source Code
   ```cs
   public float GetMouseSensitivity(){ return mouse_sensitivity; }
