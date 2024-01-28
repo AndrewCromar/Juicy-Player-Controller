@@ -33,8 +33,9 @@ A single c# script can have it all? Yes, Juicy PC is a single c# script for Unit
 - [x] Epic logo.
 - [x] Script "API".
 - [x] Documentation.
-- [ ] Trailer.
-- [ ] Unity Asset Store
+- [x] Trailer. ([Link to Trailer](https://www.youtube.com/watch?v=qo74vB7uOtk))
+- [ ] Unity Asset Store (In Progress)
+- [ ] Updates with more movement options.
 
 ##
 ### Youtube
