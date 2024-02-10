@@ -15,7 +15,8 @@ A single c# script can have it all? Yes, Juicy PC is a single c# script for Unit
 - [x] Built in default recommended settings.
 - [x] Helpful error logging.
 - [x] Debug variable in the inspector.
-- [x] Epic logo. 
+- [x] Epic logo.
+- [ ] Auto add components with required components.
 
 ## How To Use
 1. Go to the latest release.
