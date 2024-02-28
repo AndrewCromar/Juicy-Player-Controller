@@ -22,7 +22,9 @@ jucy_pc.SetJumpHeight(100f);
 
 ## Getting variable values.
 <details>
-  <summary>GetMouseSensitivity()</summary>
+  <summary>GetMouseSensitivity() </summary>
+  
+  > **Supported Flavors:** Orange, Lemonade
   
   ### Description
   Returns the mouse_sensitivity variable as a float.
@@ -41,6 +43,8 @@ jucy_pc.SetJumpHeight(100f);
 <details>
   <summary>GetJumpHeight()</summary>
   
+  > **Supported Flavors:** Orange, Lemonade
+  
   ### Description
   Returns the jump_height variable as a float.
 
@@ -56,7 +60,28 @@ jucy_pc.SetJumpHeight(100f);
 </details>
 
 <details>
+  <summary>GetJumpKeybind()</summary>
+  
+  > **Supported Flavors:** Orange, Lemonade
+  
+  ### Description
+  Returns the jump_keybind variable as a KeyCode.
+
+  ### Usage
+  ```cs
+  jucy_pc.GetJumpKeybind();
+  ```
+
+  ### Source Code
+  ```cs
+  public KeyCode GetJumpKeybind(){ return jump_keybind; }
+  ```
+</details>
+
+<details>
   <summary>GetGravity()</summary>
+  
+  > **Supported Flavors:** Orange, Lemonade
   
   ### Description
   Returns the gravity variable as a float.
@@ -75,6 +100,8 @@ jucy_pc.SetJumpHeight(100f);
 <details>
   <summary>GetWalkSpeed()</summary>
   
+  > **Supported Flavors:** Orange, Lemonade
+  
   ### Description
   Returns the walk_speed variable as a float.
 
@@ -91,6 +118,8 @@ jucy_pc.SetJumpHeight(100f);
 
 <details>
   <summary>GetRunKeybind()</summary>
+  
+  > **Supported Flavors:** Orange, Lemonade
   
   ### Description
   Returns the run_keybind variable as a KeyCode.
@@ -109,6 +138,8 @@ jucy_pc.SetJumpHeight(100f);
 <details>
   <summary>GetRunSpeed()</summary>
   
+  > **Supported Flavors:** Orange, Lemonade
+  
   ### Description
   Returns the run_speed variable as a float.
 
@@ -125,6 +156,8 @@ jucy_pc.SetJumpHeight(100f);
 
 <details>
   <summary>GetStaminaDrain()</summary>
+  
+  > **Supported Flavors:** Orange, Lemonade
   
   ### Description
   Returns the stamina_drain variable as a float.
@@ -143,6 +176,8 @@ jucy_pc.SetJumpHeight(100f);
 <details>
   <summary>GetStaminaRegen()</summary>
   
+  > **Supported Flavors:** Orange, Lemonade
+  
   ### Description
   Returns the stamina_regen variable as a float.
 
@@ -159,6 +194,8 @@ jucy_pc.SetJumpHeight(100f);
 
 <details>
   <summary>GetMaxStamina()</summary>
+  
+  > **Supported Flavors:** Orange, Lemonade
   
   ### Description
   Returns the max_stamina variable as a float.
@@ -177,6 +214,8 @@ jucy_pc.SetJumpHeight(100f);
 <details>
   <summary>GetCrouchKeyBind()</summary>
   
+  > **Supported Flavors:** Orange, Lemonade
+  
   ### Description
   Returns the crouch_keybind variable as a KeyCode.
 
@@ -193,6 +232,8 @@ jucy_pc.SetJumpHeight(100f);
 
 <details>
   <summary>GetCrouchSpeed()</summary>
+  
+  > **Supported Flavors:** Orange, Lemonade
   
   ### Description
   Returns the crouch_speed variable as a float.
@@ -211,6 +252,8 @@ jucy_pc.SetJumpHeight(100f);
 <details>
   <summary>GetDefaultHeight()</summary>
   
+  > **Supported Flavors:** Orange, Lemonade
+  
   ### Description
   Returns the default_height variable as a float.
 
@@ -228,6 +271,8 @@ jucy_pc.SetJumpHeight(100f);
 <details>
   <summary>GetCrouchHeight()</summary>
   
+  > **Supported Flavors:** Orange, Lemonade
+  
   ### Description
   Returns the crouch_height variable as a float.
 
@@ -244,6 +289,8 @@ jucy_pc.SetJumpHeight(100f);
 
 <details>
   <summary>GetGroundDistance()</summary>
+  
+  > **Supported Flavors:** Orange, Lemonade
   
   ### Description
   Returns the ground_distance variable as a float.
@@ -263,8 +310,10 @@ jucy_pc.SetJumpHeight(100f);
 <details>
   <summary>SetMouseSensitivity()</summary>
   
+  > **Supported Flavors:** Orange, Lemonade
+  
   ### Description
-  Returns the mouse_sensitivity variable as a float.
+  Sets the mouse_sensitivity variable.
 
   ### Usage
   ```cs
@@ -280,8 +329,10 @@ jucy_pc.SetJumpHeight(100f);
 <details>
   <summary>SetJumpHeight()</summary>
   
+  > **Supported Flavors:** Orange, Lemonade
+  
   ### Description
-  Returns the jump_height variable as a float.
+  Sets the jump_height variable.
 
   ### Usage
   ```cs
@@ -295,10 +346,31 @@ jucy_pc.SetJumpHeight(100f);
 </details>
 
 <details>
-  <summary>SetGravity()</summary>
+  <summary>SetJumpKeybind()</summary>
+  
+  > **Supported Flavors:** Orange, Lemonade
   
   ### Description
-  Returns the gravity variable as a float.
+  Sets the jump_keybind variable.
+
+  ### Usage
+  ```cs
+  jucy_pc.SetJumpKeybind({new_value});
+  ```
+
+  ### Source Code
+  ```cs
+  public void SetJumpKeybind(KeyCode new_jump_keybind){ jump_keybind = new_jump_keybind; }
+  ```
+</details>
+
+<details>
+  <summary>SetGravity()</summary>
+  
+  > **Supported Flavors:** Orange, Lemonade
+  
+  ### Description
+  Sets the gravity variable.
 
   ### Usage
   ```cs
@@ -314,8 +386,10 @@ jucy_pc.SetJumpHeight(100f);
 <details>
   <summary>SetWalkSpeed()</summary>
   
+  > **Supported Flavors:** Orange, Lemonade
+  
   ### Description
-  Returns the walk_speed variable as a float.
+  Sets the walk_speed variable.
 
   ### Usage
   ```cs
@@ -331,8 +405,10 @@ jucy_pc.SetJumpHeight(100f);
 <details>
   <summary>SetRunKeybind()</summary>
   
+  > **Supported Flavors:** Orange, Lemonade
+  
   ### Description
-  Returns the run_keybind variable as a KeyCode.
+  Sets the run_keybind variable.
 
   ### Usage
   ```cs
@@ -348,8 +424,10 @@ jucy_pc.SetJumpHeight(100f);
 <details>
   <summary>SetRunSpeed()</summary>
   
+  > **Supported Flavors:** Orange, Lemonade
+  
   ### Description
-  Returns the run_speed variable as a float.
+  Sets the run_speed variable.
 
   ### Usage
   ```cs
@@ -365,8 +443,10 @@ jucy_pc.SetJumpHeight(100f);
 <details>
   <summary>SetStaminaDrain()</summary>
   
+  > **Supported Flavors:** Orange, Lemonade
+  
   ### Description
-  Returns the stamina_drain variable as a float.
+  Sets the stamina_drain variable.
 
   ### Usage
   ```cs
@@ -382,8 +462,10 @@ jucy_pc.SetJumpHeight(100f);
 <details>
   <summary>SetStaminaRegen()</summary>
   
+  > **Supported Flavors:** Orange, Lemonade
+  
   ### Description
-  Returns the stamina_regen variable as a float.
+  Sets the stamina_regen variable.
 
   ### Usage
   ```cs
@@ -399,8 +481,10 @@ jucy_pc.SetJumpHeight(100f);
 <details>
   <summary>SetMaxStamina()</summary>
   
+  > **Supported Flavors:** Orange, Lemonade
+  
   ### Description
-  Returns the max_stamina variable as a float.
+  Sets the max_stamina variable.
 
   ### Usage
   ```cs
@@ -416,8 +500,10 @@ jucy_pc.SetJumpHeight(100f);
 <details>
   <summary>SetCrouchKeyBind()</summary>
   
+  > **Supported Flavors:** Orange, Lemonade
+  
   ### Description
-  Returns the crouch_keybind variable as a KeyCode.
+  Sets the crouch_keybind variable.
 
   ### Usage
   ```cs
@@ -433,8 +519,10 @@ jucy_pc.SetJumpHeight(100f);
 <details>
   <summary>SetCrouchSpeed()</summary>
   
+  > **Supported Flavors:** Orange, Lemonade
+  
   ### Description
-  Returns the crouch_speed variable as a float.
+  Sets the crouch_speed variable.
 
   ### Usage
   ```cs
@@ -450,8 +538,10 @@ jucy_pc.SetJumpHeight(100f);
 <details>
   <summary>SetDefaultHeight()</summary>
   
+  > **Supported Flavors:** Orange, Lemonade
+  
   ### Description
-  Returns the default_height variable as a float.
+  Sets the default_height variable.
 
   ### Usage
   ```cs
@@ -467,8 +557,10 @@ jucy_pc.SetJumpHeight(100f);
 <details>
   <summary>SetCrouchHeight()</summary>
   
+  > **Supported Flavors:** Orange, Lemonade
+  
   ### Description
-  Returns the crouch_height variable as a float.
+  Sets the crouch_height variable.
 
   ### Usage
   ```cs
@@ -484,8 +576,10 @@ jucy_pc.SetJumpHeight(100f);
 <details>
   <summary>SetGroundDistance()</summary>
   
+  > **Supported Flavors:** Orange, Lemonade
+  
   ### Description
-  Returns the ground_distance variable as a float.
+  Sets the ground_distance variable.
 
   ### Usage
   ```cs

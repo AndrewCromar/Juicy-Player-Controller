@@ -1,10 +1,14 @@
 using UnityEngine;
 
-public class JuicyPlayerController : MonoBehaviour {
-    [HideInInspector] public static JuicyPlayerController instance;
+public class JuicyPlayerController_ThirdPersonFlavor : MonoBehaviour {
+    [HideInInspector] public static JuicyPlayerController_ThirdPersonFlavor instance;
 
     [Header ("Mouse Lock")]
     [SerializeField] private bool auto_lock_cursor = true;
+
+    [Header ("Graphics")]
+    [SerializeField] private string graphics_container_tag = "graphics_container";
+    [SerializeField] private float graphics_rotation_lerp_speed = 5f;
 
     [Header ("Camera Look")]
     [SerializeField] private string camera_container_tag = "camera_container";
@@ -37,18 +41,19 @@ public class JuicyPlayerController : MonoBehaviour {
     [SerializeField] private float ground_distance = 0.4f;
 
     [Header ("Debug (read-only)")]
+    [ReadOnly] [SerializeField] private CharacterController controller;
     [ReadOnly] [SerializeField] private PlayerState state;
     [ReadOnly] [SerializeField] private Vector3 velocity;
     [ReadOnly] [SerializeField] private float speed;
     [ReadOnly] [SerializeField] private float height;
-    [ReadOnly] [SerializeField] private float stamina;
-    [ReadOnly] [SerializeField] private bool is_grounded;
     [ReadOnly] [SerializeField] private Transform camera_container;
+    [ReadOnly] [SerializeField] private Transform graphics_container;
+    [ReadOnly] [SerializeField] private bool is_grounded;
     [ReadOnly] [SerializeField] private Transform ground_check;
     [ReadOnly] [SerializeField] private LayerMask ground_mask;
-    [ReadOnly] [SerializeField] private CharacterController controller;
-    [ReadOnly] [SerializeField] private float cam_x_rotation;
     [ReadOnly] [SerializeField] private bool all_checks_passed;
+    [ReadOnly] [SerializeField] private float stamina;
+    [ReadOnly] [SerializeField] private float cam_x_rotation;
 
     private enum PlayerState {
         Walking,
@@ -58,12 +63,13 @@ public class JuicyPlayerController : MonoBehaviour {
 
     private void Awake(){
         instance = this;
-        
+
         stamina = max_stamina;
 
         camera_container = GameObject.FindGameObjectsWithTag(camera_container_tag)[0].transform;
-        ground_check = GameObject.FindGameObjectsWithTag(ground_check_tag)[0].transform;
+        graphics_container = GameObject.FindGameObjectsWithTag(graphics_container_tag)[0].transform;
         controller = gameObject.GetComponent<CharacterController>();
+        ground_check = GameObject.FindGameObjectsWithTag(ground_check_tag)[0].transform;
         ground_mask = LayerMask.GetMask(ground_layer_name);
 
         RunChecks();
@@ -77,6 +83,7 @@ public class JuicyPlayerController : MonoBehaviour {
         if(!all_checks_passed){ return; }
 
         DoCameraLook();
+        DoGraphicsRotation();
 
         is_grounded = Physics.CheckSphere(ground_check.position, ground_distance, ground_mask);
 
@@ -104,23 +111,6 @@ public class JuicyPlayerController : MonoBehaviour {
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
-    }
-
-    private void RunChecks(){
-        all_checks_passed = true;
-
-        if(camera_container == null){ all_checks_passed = false;
-            Debug.LogError("Juicy Controller > No camera container GameObject with tag: \"" + camera_container_tag + "\" found. Did you create a tag?");
-        }
-        if(ground_check == null){ all_checks_passed = false;
-            Debug.LogError("Juicy Controller > No ground check GameObject with tag: \"" + ground_check_tag + "\" found. Did you create a tag?");
-        }
-        if(controller == null){ all_checks_passed = false;
-            Debug.LogError("Juicy Controller > No \"Character Controller\" found. Did you add one to this same GameObject?");
-        }
-        if(ground_mask == 0) { all_checks_passed = false;
-            Debug.LogError("Juicy Controller > No ground layer named \"" + ground_layer_name + "\" found. Did you have a ground layer?");
-        }
     }
 
     private void UpdatePlayerState(){
@@ -169,15 +159,50 @@ public class JuicyPlayerController : MonoBehaviour {
         float mouse_y = Input.GetAxis("Mouse Y") * mouse_sensitivity * Time.deltaTime;
 
         cam_x_rotation -= mouse_y;
-        cam_x_rotation = Mathf.Clamp(cam_x_rotation, -90f, 90f);
+        cam_x_rotation = Mathf.Clamp(cam_x_rotation, -45f, 45f);
 
         camera_container.localRotation = Quaternion.Euler(cam_x_rotation, 0f, 0f);
         transform.Rotate(Vector3.up * mouse_x);
     }
 
+    private void DoGraphicsRotation(){
+        float x = Input.GetAxis("Horizontal");
+        float z = Input.GetAxis("Vertical");
+
+        if (x != 0f || z != 0f) {
+            Vector3 inputDirection = new Vector3(x, 0f, z).normalized;
+            float targetAngle = Mathf.Atan2(inputDirection.x, inputDirection.z) * Mathf.Rad2Deg;
+
+            float smoothRotation = Mathf.LerpAngle(graphics_container.localRotation.eulerAngles.y, targetAngle, graphics_rotation_lerp_speed * Time.deltaTime);
+
+            graphics_container.localRotation = Quaternion.Euler(0f, smoothRotation, 0f);
+        }
+    }
+
+    private void RunChecks(){
+        all_checks_passed = true;
+
+        if(camera_container == null){ all_checks_passed = false;
+            Debug.LogError("Juicy Controller > No camera container GameObject with tag: \"" + camera_container_tag + "\" found. Did you create a tag?");
+        }
+        if(graphics_container == null){ all_checks_passed = false;
+            Debug.LogError("Juicy Controller > No graphics container GameObject with tag: \"" + graphics_container_tag + "\" found. Did you create a tag?");
+        }
+        if(ground_check == null){ all_checks_passed = false;
+            Debug.LogError("Juicy Controller > No ground check GameObject with tag: \"" + ground_check_tag + "\" found. Did you create a tag?");
+        }
+        if(controller == null){ all_checks_passed = false;
+            Debug.LogError("Juicy Controller > No \"Character Controller\" found. Did you add one to this same GameObject?");
+        }
+        if(ground_mask == 0) { all_checks_passed = false;
+            Debug.LogError("Juicy Controller > No ground layer named \"" + ground_layer_name + "\" found. Did you have a ground layer?");
+        }
+    }
+
     #region api
 
     #region set
+    public void SetGraphicsRotationLerpSpeed(float new_graphics_rotation_lerp_speed){ graphics_rotation_lerp_speed = new_graphics_rotation_lerp_speed; }
     public void SetMouseSensitivity(float new_sensitivity){ mouse_sensitivity = new_sensitivity; }
     public void SetJumpHeight(float new_jump_height){ jump_height = new_jump_height; }
     public void SetGravity(float new_gravity){ gravity = new_gravity; }
@@ -196,6 +221,7 @@ public class JuicyPlayerController : MonoBehaviour {
     #endregion
 
     #region get
+    public float GetGraphicsRotationLerpSpeed(){ return graphics_rotation_lerp_speed; }
     public float GetMouseSensitivity(){ return mouse_sensitivity; }
     public float GetJumpHeight(){ return jump_height; }
     public float GetGravity(){ return gravity; }
