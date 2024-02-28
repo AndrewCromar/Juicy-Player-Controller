@@ -1,6 +1,12 @@
 # ONYX Juicy Player Controller
 A single c# script can have it all? Yes, Juicy PC is a single c# script for Unity 3d projects to act as a base player controller for any first person Unity 3d projects.
 
+## Flavors.
+### Orange:
+- First Person Controller.
+### Lemonade:
+- Third Person Controller.
+
 ## Documentation
 [Link to Documentation](https://github.com/AndrewCromar/Juicy-Player-Controller/blob/main/Docs/documentation.md)
 > This documentation is located at "docs/documentation.md".
@@ -16,6 +22,8 @@ A single c# script can have it all? Yes, Juicy PC is a single c# script for Unit
 - [x] Helpful error logging.
 - [x] Debug variable in the inspector.
 - [x] Epic logo.
+- [x] Orange flavor (first person).
+- [x] Lemonade flavor (third person).
 - [ ] Auto add components with required components.
 
 ## How To Use
@@ -35,7 +43,8 @@ A single c# script can have it all? Yes, Juicy PC is a single c# script for Unit
 - [x] Script "API".
 - [x] Documentation.
 - [x] Trailer. ([Link to Trailer](https://www.youtube.com/watch?v=qo74vB7uOtk))
-- [ ] Unity Asset Store (In Progress)
+- [ ] Unity Asset Store (In Progress).
+- [x] Third person mode.
 - [ ] Updates with more movement options.
 
 ##
