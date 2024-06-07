@@ -27,6 +27,19 @@ A single c# script can have it all? Yes, Juicy Player Controller is a single c# 
 - [ ] Auto add components with required components.
 
 ## How To Use
+> There are two ways to download and use the package (.zip or .unityasset).
+### .zip:
+1. Go to the latest release.
+     > These directions will be on the release also.
+3. Download the attached "zip" file.
+4. Extract it to you unity project's "Assets" folder.
+5. Import the unity Input System package.
+6. Drag and drop the "Juicy Player" prefab from "Assets/Juicy Player Controller/Prefab/Juicy Player.prefab" into your scene.
+7. Create layer "Ground".
+     > This can be customized later.
+8. Assign the "Ground" layer to any gameobjects that will be walkable.
+9. Press the "Play" button and see as your fully custom Juicy Player is controllable.
+### .unitypackage:
 1. Go to the latest release.
      > These directions will be on the release also.
 3. Download the attached "zip" file.
