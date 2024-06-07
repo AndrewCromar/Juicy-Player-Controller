@@ -5,7 +5,7 @@
 > - This documentation will be updated to match the latest release.
 
 > [!IMPORTANT]
-> This package requires the unity Input System package.
+> This package requires the Unity Input System package.
 
 ## How to reference the script.
 From anywhere in the scene you can reference the Juicy_Player_Controller  script using the following code:
