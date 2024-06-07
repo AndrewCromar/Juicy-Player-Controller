@@ -1,10 +1,8 @@
 # Juicy Documentation
 > [!NOTE]
-> Documentation for the Juicy Player Controller is ment to be as clear and simple to understand as possible. If anything does not make sense please let us know (via discord or github). You could also just make changes to the documentation in a pull request.
-
-> Please report or fix any errors you might come across (via discord or github).
-
-> This documentation will be updated to match the latest release.
+> - Documentation for the Juicy Player Controller is ment to be as clear and simple to understand as possible. If anything does not make sense please let us know (via discord or github). You could also just make changes to the documentation in a pull request.
+> - Please report or fix any errors you might come across (via discord or github).
+> - This documentation will be updated to match the latest release.
 
 > [!IMPORTANT]
 > This package requires the unity Input System package.
