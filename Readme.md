@@ -59,7 +59,7 @@ A single c# script can have it all? Yes, Juicy Player Controller is a single c# 
 - [x] Trailer. ([Link to Trailer](https://www.youtube.com/watch?v=qo74vB7uOtk))
 <!-- - [ ] Unity Asset Store (In Progress). -->
 - [x] Third person mode.
-- [x] Upate to the unity Input System.
+- [x] Upate to the Unity Input System.
 - [ ] Updates with more movement options.
 
 ##
