@@ -31,11 +31,12 @@ A single c# script can have it all? Yes, Juicy Player Controller is a single c# 
      > These directions will be on the release also.
 3. Download the attached "zip" file.
 4. Extract it to you unity project's "Assets" folder.
-5. Drag and drop the "Juicy Player" prefab from "Assets/Juicy Player Controller/Prefab/Juicy Player.prefab" into your scene.
-6. Create layer "Ground".
+5. Import the unity Input System package.
+6. Drag and drop the "Juicy Player" prefab from "Assets/Juicy Player Controller/Prefab/Juicy Player.prefab" into your scene.
+7. Create layer "Ground".
      > This can be customized later.
-7. Assign the "Ground" layer to any gameobjects that will be walkable.
-8. Press the "Play" button and see as your fully custom Juicy Player is controllable.
+8. Assign the "Ground" layer to any gameobjects that will be walkable.
+9. Press the "Play" button and see as your fully custom Juicy Player is controllable.
 
 ## Current Roadmap
 - [x] Simple first release.
@@ -43,8 +44,9 @@ A single c# script can have it all? Yes, Juicy Player Controller is a single c# 
 - [x] Script "API".
 - [x] Documentation.
 - [x] Trailer. ([Link to Trailer](https://www.youtube.com/watch?v=qo74vB7uOtk))
-- [ ] Unity Asset Store (In Progress).
+<!-- - [ ] Unity Asset Store (In Progress). -->
 - [x] Third person mode.
+- [x] Upate to the unity Input System.
 - [ ] Updates with more movement options.
 
 ##

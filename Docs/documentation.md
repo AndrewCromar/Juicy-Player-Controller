@@ -1,15 +1,20 @@
 # Juicy Documentation
-Note:
-> Documentation for the Juicy Player Controller is ment to be as clear and simple to understand as possible. If anything does not make sense please let us know (via discord or github). You could also just make changes to the documentation in a pull request.
+> [!NOTE]
+> - Documentation for the Juicy Player Controller is ment to be as clear and simple to understand as possible. If anything does not make sense please let us know (via discord or github). You could also just make changes to the documentation in a pull request.
+> - Please report or fix any errors you might come across (via discord or github).
+> - This documentation will be updated to match the latest release.
 
-> Please report or fix any errors you might come across (via discord or github).
-
-> This documentation will be updated to match the latest release.
+> [!IMPORTANT]
+> This package requires the unity Input System package.
 
 ## How to reference the script.
 From anywhere in the scene you can reference the Juicy_Player_Controller  script using the following code:
 ```cs
-private Juicy_Player_Controller jucy_pc = Juicy_Player_Controller.instance;
+private Juicy_Player_Controller jucy_pc = Juicy_Player_Controller.instance; // orange
+```
+
+```cs
+private JuicyPlayerController_ThirdPersonFlavor jucy_pc = JuicyPlayerController_ThirdPersonFlavor.instance; // lemonade
 ```
 > This creates a variable called jucy_pc and sets it to the current active instance of the Juicy_Player_Controller script.
 
@@ -60,25 +65,6 @@ jucy_pc.SetJumpHeight(100f);
 </details>
 
 <details>
-  <summary>GetJumpKeybind()</summary>
-  
-  > **Supported Flavors:** Orange, Lemonade
-  
-  ### Description
-  Returns the jump_keybind variable as a KeyCode.
-
-  ### Usage
-  ```cs
-  jucy_pc.GetJumpKeybind();
-  ```
-
-  ### Source Code
-  ```cs
-  public KeyCode GetJumpKeybind(){ return jump_keybind; }
-  ```
-</details>
-
-<details>
   <summary>GetGravity()</summary>
   
   > **Supported Flavors:** Orange, Lemonade
@@ -113,25 +99,6 @@ jucy_pc.SetJumpHeight(100f);
   ### Source Code
   ```cs
   public float GetWalkSpeed(){ return walk_speed; }
-  ```
-</details>
-
-<details>
-  <summary>GetRunKeybind()</summary>
-  
-  > **Supported Flavors:** Orange, Lemonade
-  
-  ### Description
-  Returns the run_keybind variable as a KeyCode.
-
-  ### Usage
-  ```cs
-  jucy_pc.GetRunKeybind();
-  ```
-
-  ### Source Code
-  ```cs
-  public float GetRunKeybind(){ return run_keybind; }
   ```
 </details>
 
@@ -208,25 +175,6 @@ jucy_pc.SetJumpHeight(100f);
   ### Source Code
   ```cs
   public float GetMaxStamina(){ return max_stamina; }
-  ```
-</details>
-
-<details>
-  <summary>GetCrouchKeyBind()</summary>
-  
-  > **Supported Flavors:** Orange, Lemonade
-  
-  ### Description
-  Returns the crouch_keybind variable as a KeyCode.
-
-  ### Usage
-  ```cs
-  jucy_pc.GetCrouchKeyBind();
-  ```
-
-  ### Source Code
-  ```cs
-  public float GetCrouchKeyBind(){ return crouch_keybind; }
   ```
 </details>
 
@@ -346,25 +294,6 @@ jucy_pc.SetJumpHeight(100f);
 </details>
 
 <details>
-  <summary>SetJumpKeybind()</summary>
-  
-  > **Supported Flavors:** Orange, Lemonade
-  
-  ### Description
-  Sets the jump_keybind variable.
-
-  ### Usage
-  ```cs
-  jucy_pc.SetJumpKeybind({new_value});
-  ```
-
-  ### Source Code
-  ```cs
-  public void SetJumpKeybind(KeyCode new_jump_keybind){ jump_keybind = new_jump_keybind; }
-  ```
-</details>
-
-<details>
   <summary>SetGravity()</summary>
   
   > **Supported Flavors:** Orange, Lemonade
@@ -399,25 +328,6 @@ jucy_pc.SetJumpHeight(100f);
   ### Source Code
   ```cs
   public void SetWalkSpeed(float new_walk_speed){ walk_speed = new_walk_speed; }
-  ```
-</details>
-
-<details>
-  <summary>SetRunKeybind()</summary>
-  
-  > **Supported Flavors:** Orange, Lemonade
-  
-  ### Description
-  Sets the run_keybind variable.
-
-  ### Usage
-  ```cs
-  jucy_pc.SetRunKeybind({new_value});
-  ```
-
-  ### Source Code
-  ```cs
-  public void SetRunKeybind(KeyCode new_run_keybind){ run_keybind = new_run_keybind; }
   ```
 </details>
 
@@ -494,25 +404,6 @@ jucy_pc.SetJumpHeight(100f);
   ### Source Code
   ```cs
   public void SetMaxStamina(float new_max_stamina){ max_stamina = new_max_stamina; }
-  ```
-</details>
-
-<details>
-  <summary>SetCrouchKeyBind()</summary>
-  
-  > **Supported Flavors:** Orange, Lemonade
-  
-  ### Description
-  Sets the crouch_keybind variable.
-
-  ### Usage
-  ```cs
-  jucy_pc.SetCrouchKeyBind({new_value});
-  ```
-
-  ### Source Code
-  ```cs
-  public void SetCrouchKeyBind(KeyCode new_crouch_keybind){ crouch_keybind = new_crouch_keybind; }
   ```
 </details>
 
