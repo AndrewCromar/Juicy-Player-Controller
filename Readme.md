@@ -42,9 +42,9 @@ A single c# script can have it all? Yes, Juicy Player Controller is a single c# 
 ### .unitypackage:
 1. Go to the latest release.
      > These directions will be on the release also.
-3. Download the attached "zip" file.
-4. Extract it to you unity project's "Assets" folder.
-5. Import the unity Input System package.
+3. Download the attached "unityasset" file.
+4. Dubble click it to import it to the unity editor.
+5. Import the unity Input System package from the package manager.
 6. Drag and drop the "Juicy Player" prefab from "Assets/Juicy Player Controller/Prefab/Juicy Player.prefab" into your scene.
 7. Create layer "Ground".
      > This can be customized later.
