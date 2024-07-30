@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using EditorAttributes;
 
 namespace ONYX {
     public class JuicyPlayerController : MonoBehaviour {
