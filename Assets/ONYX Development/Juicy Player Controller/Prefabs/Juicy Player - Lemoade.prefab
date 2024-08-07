@@ -155,7 +155,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6078184427915209898}
   - component: {fileID: 7323296594453807337}
-  - component: {fileID: 6916516189755362939}
+  - component: {fileID: 6497270313128685005}
   - component: {fileID: 7184384769385258459}
   m_Layer: 0
   m_Name: Juicy Player - Lemoade
@@ -199,7 +199,7 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6916516189755362939
+--- !u!114 &6497270313128685005
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4718651525011966319}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb3d49d4eb2af2042a36a8c9f9542f40, type: 3}
+  m_Script: {fileID: 11500000, guid: 06c005d569c07d749a089b8fd904f349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   auto_lock_cursor: 1
@@ -291,8 +291,8 @@ MonoBehaviour:
     m_ActionName: Orange/Crouch[/Keyboard/ctrl,/XInputControllerWindows/buttonSouth]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6916516189755362939}
-        m_TargetAssemblyTypeName: ONYX.JuicyPlayerController_ThirdPersonFlavor, Assembly-CSharp
+      - m_Target: {fileID: 6497270313128685005}
+        m_TargetAssemblyTypeName: ONYX.JuicyPlayerController_LEMONADE, Assembly-CSharp
         m_MethodName: LocomotionInput
         m_Mode: 0
         m_Arguments:
@@ -307,8 +307,8 @@ MonoBehaviour:
     m_ActionName: Lemonade/Locomotion[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/XInputControllerWindows/leftStick]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6916516189755362939}
-        m_TargetAssemblyTypeName: ONYX.JuicyPlayerController_ThirdPersonFlavor, Assembly-CSharp
+      - m_Target: {fileID: 6497270313128685005}
+        m_TargetAssemblyTypeName: ONYX.JuicyPlayerController_LEMONADE, Assembly-CSharp
         m_MethodName: LookInput
         m_Mode: 0
         m_Arguments:
@@ -323,8 +323,8 @@ MonoBehaviour:
     m_ActionName: Lemonade/Look[/Mouse/delta,/XInputControllerWindows/rightStick]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6916516189755362939}
-        m_TargetAssemblyTypeName: ONYX.JuicyPlayerController_ThirdPersonFlavor, Assembly-CSharp
+      - m_Target: {fileID: 6497270313128685005}
+        m_TargetAssemblyTypeName: ONYX.JuicyPlayerController_LEMONADE, Assembly-CSharp
         m_MethodName: JumpInput
         m_Mode: 0
         m_Arguments:
@@ -339,8 +339,8 @@ MonoBehaviour:
     m_ActionName: Lemonade/Jump[/Keyboard/space,/XInputControllerWindows/buttonEast]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6916516189755362939}
-        m_TargetAssemblyTypeName: ONYX.JuicyPlayerController_ThirdPersonFlavor, Assembly-CSharp
+      - m_Target: {fileID: 6497270313128685005}
+        m_TargetAssemblyTypeName: ONYX.JuicyPlayerController_LEMONADE, Assembly-CSharp
         m_MethodName: RunInput
         m_Mode: 0
         m_Arguments:
@@ -355,8 +355,8 @@ MonoBehaviour:
     m_ActionName: Lemonade/Run[/Keyboard/shift,/XInputControllerWindows/rightTrigger]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6916516189755362939}
-        m_TargetAssemblyTypeName: ONYX.JuicyPlayerController_ThirdPersonFlavor, Assembly-CSharp
+      - m_Target: {fileID: 6497270313128685005}
+        m_TargetAssemblyTypeName: ONYX.JuicyPlayerController_LEMONADE, Assembly-CSharp
         m_MethodName: CrouchInput
         m_Mode: 0
         m_Arguments:
@@ -371,7 +371,7 @@ MonoBehaviour:
     m_ActionName: Lemonade/Crouch[/Keyboard/ctrl,/XInputControllerWindows/buttonSouth]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: 300ad005-7c26-4d8d-9b5f-f7dca2db92f1
+  m_DefaultActionMap: Lemonade
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!1 &5987997065494060964

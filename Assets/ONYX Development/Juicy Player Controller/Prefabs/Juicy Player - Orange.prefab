@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 831420520832690987}
   - component: {fileID: 5955625757506554729}
-  - component: {fileID: 6063163808847394743}
+  - component: {fileID: 3754735061774844010}
   - component: {fileID: 6562750077087915585}
   m_Layer: 0
   m_Name: Juicy Player - Orange
@@ -54,7 +54,7 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6063163808847394743
+--- !u!114 &3754735061774844010
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -63,12 +63,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 829391294815125960}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43631c846cb6b454fa7c9f4200e391d7, type: 3}
+  m_Script: {fileID: 11500000, guid: 50d73f8e2bfdaff49b1b2a29eba3ef7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   auto_lock_cursor: 1
   camera_container_tag: camera_container
-  mouse_sensitivity: 100
+  mouse_sensitivity: 250
   jump_height: 1.5
   gravity: -9.81
   walk_speed: 4
@@ -123,8 +123,8 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6063163808847394743}
-        m_TargetAssemblyTypeName: ONYX.JuicyPlayerController, Assembly-CSharp
+      - m_Target: {fileID: 3754735061774844010}
+        m_TargetAssemblyTypeName: ONYX.JuicyPlayerController_ORANGE, Assembly-CSharp
         m_MethodName: LocomotionInput
         m_Mode: 0
         m_Arguments:
@@ -139,8 +139,8 @@ MonoBehaviour:
     m_ActionName: Orange/Locomotion[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/XInputControllerWindows/leftStick]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6063163808847394743}
-        m_TargetAssemblyTypeName: ONYX.JuicyPlayerController, Assembly-CSharp
+      - m_Target: {fileID: 3754735061774844010}
+        m_TargetAssemblyTypeName: ONYX.JuicyPlayerController_ORANGE, Assembly-CSharp
         m_MethodName: LookInput
         m_Mode: 0
         m_Arguments:
@@ -163,8 +163,8 @@ MonoBehaviour:
     m_ActionName: Lemonade/Look[/Mouse/delta,/XInputControllerWindows/rightStick]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6063163808847394743}
-        m_TargetAssemblyTypeName: ONYX.JuicyPlayerController, Assembly-CSharp
+      - m_Target: {fileID: 3754735061774844010}
+        m_TargetAssemblyTypeName: ONYX.JuicyPlayerController_ORANGE, Assembly-CSharp
         m_MethodName: JumpInput
         m_Mode: 0
         m_Arguments:
@@ -183,8 +183,8 @@ MonoBehaviour:
     m_ActionName: Lemonade/Jump[/Keyboard/space,/XInputControllerWindows/buttonEast]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6063163808847394743}
-        m_TargetAssemblyTypeName: ONYX.JuicyPlayerController, Assembly-CSharp
+      - m_Target: {fileID: 3754735061774844010}
+        m_TargetAssemblyTypeName: ONYX.JuicyPlayerController_ORANGE, Assembly-CSharp
         m_MethodName: RunInput
         m_Mode: 0
         m_Arguments:
@@ -199,8 +199,8 @@ MonoBehaviour:
     m_ActionName: Orange/Run[/Keyboard/shift,/XInputControllerWindows/rightTrigger]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6063163808847394743}
-        m_TargetAssemblyTypeName: ONYX.JuicyPlayerController, Assembly-CSharp
+      - m_Target: {fileID: 3754735061774844010}
+        m_TargetAssemblyTypeName: ONYX.JuicyPlayerController_ORANGE, Assembly-CSharp
         m_MethodName: CrouchInput
         m_Mode: 0
         m_Arguments:
