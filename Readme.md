@@ -69,4 +69,4 @@ A single c# script can have it all? Yes, Juicy Player Controller is a single c# 
 ### Discord
 [discord.gg](https://discord.gg/2maTr7RQQQ)
 ##
-<img src="ONYX/onyx_logo.png" alt="onyx_logo" width="200"/> <img src="ONYX/juicy_pc_logo.png" alt="juicy_pc_logo" width="200"/>
+<img src="/Assets/ONYX Development/Juicy Player Controller/ONYX/onyx_logo.png" alt="onyx_logo" width="200"/> <img src="/Assets/ONYX Development/Juicy Player Controller/ONYX/juicy_pc_logo.png" alt="juicy_pc_logo" width="200"/>
