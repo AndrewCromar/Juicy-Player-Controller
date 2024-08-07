@@ -64,6 +64,8 @@ A single c# script can have it all? Yes, Juicy Player Controller is a single c# 
 - [ ] Updates with more movement options.
 
 ##
+### Website
+[onyx.andrewcromar.org](https://onyx.andrewcromar.org/#juicyplayercontroller)
 ### Youtube
 [youtube.com/@ONYXDevelopment](https://www.youtube.com/@ONYXDevelopment)
 ### Discord
