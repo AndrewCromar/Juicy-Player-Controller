@@ -11,7 +11,6 @@ A single c# script can have it all? Yes, Juicy Player Controller is a single c# 
 
 ## Documentation
 [Link to Documentation](<https://github.com/AndrewCromar/Juicy-Player-Controller/blob/main/Assets/ONYX Development/Juicy Player Controller/Docs/documentation.md>)
-> This documentation is located at "docs/documentation.md".
 
 > [!IMPORTANT]
 > This package requires the Unity Input System package.
