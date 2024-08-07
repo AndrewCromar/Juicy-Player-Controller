@@ -1,5 +1,7 @@
-using UnityEditor;
 using UnityEngine;
+
+#if UNITY_EDITOR
+using UnityEditor;
 
 namespace ONYX {
     [CustomPropertyDrawer(typeof(ReadOnlyAttribute))]
@@ -13,3 +15,4 @@ namespace ONYX {
         }
     }
 }
+#endif
