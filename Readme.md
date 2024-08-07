@@ -1,7 +1,9 @@
-# ONYX - Juicy Player Controller
+<img src="Assets/ONYX Development/Juicy Player Controller/ONYX/Asset Store/Screenshots/screenshots_one.png">
+
+# About
 A single c# script can have it all? Yes, Juicy Player Controller is a single c# script for Unity 3d projects to act as a base player controller for any first person (and now third person) Unity 3d projects.
 
-## Flavors.
+## Flavors
 ### Orange:
 - First Person Controller.
 ### Lemonade:
