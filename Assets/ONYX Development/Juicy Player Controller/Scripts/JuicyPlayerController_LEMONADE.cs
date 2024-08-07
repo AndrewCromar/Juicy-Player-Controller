@@ -2,8 +2,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 namespace ONYX {
-    public class JuicyPlayerController_ThirdPersonFlavor : MonoBehaviour {
-        [HideInInspector] public static JuicyPlayerController_ThirdPersonFlavor instance;
+    public class JuicyPlayerController_LEMONADE : MonoBehaviour {
+        [HideInInspector] public static JuicyPlayerController_LEMONADE instance;
 
         [Header ("Mouse Lock")]
         [SerializeField] private bool auto_lock_cursor = true;
